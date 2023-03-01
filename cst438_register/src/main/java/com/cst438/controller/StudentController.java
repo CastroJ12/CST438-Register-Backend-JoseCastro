@@ -35,6 +35,7 @@ public class StudentController {
         return student;
     }
 
+    //test
     @PutMapping("/students/status")
     public Student changeStudentStatus(@RequestParam("email") String email, @RequestParam("status") String status) {
         Student student = studentRepository.findByEmail(email);
