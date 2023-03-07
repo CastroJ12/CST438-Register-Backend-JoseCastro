@@ -27,7 +27,7 @@ import com.cst438.service.GradebookService;
 
 // reset main
 @RestController
-@CrossOrigin(origins = {"http://localhost:3000", "https://registerf-cst438.herokuapp.com/"})
+@CrossOrigin(origins = {"http://localhost:3000"})
 public class ScheduleController {
 	
 	
@@ -39,7 +39,7 @@ public class ScheduleController {
 	
 	@Autowired
 	EnrollmentRepository enrollmentRepository;
-	
+
 	@Autowired
 	GradebookService gradebookService;
 	
